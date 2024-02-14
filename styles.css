@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./midia/backgroundImage.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-container {
+    height: 280px;
+    width: 75%;
+    margin-top: 40px;
+    background-color: #868C91;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-header {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 245px
+}
+
+#nome {
+    height: 22px;
+    border-radius: 5px;
+    background-color: #D4D8DA;
+    font-family: 'Poppins', sans-serif;
+}
+
+#altura {
+    height: 22px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #D4D8DA;
+    font-family: 'Poppins', sans-serif;
+}
+
+#peso {
+    height: 22px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #D4D8DA;
+    font-family: 'Poppins', sans-serif;
+}
+
+#botao {
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #616467;
+    font-family: 'Poppins', sans-serif;
+    color: #D8DCDD;
+    font-size: 15px;
+}
+
+#botao:hover {
+    background: #1a1a1a;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.infos-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-header {
+    font-size: 28px;
+}
+
+.intro {
+    width: 85%;
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.imc-types {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+footer {
+    height: 90px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+#social-media-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+i:hover {
+    color: #333333;
+    transition: 0.1s;
+}
+
+@media(min-width: 2560px) {
+    body {
+        background-size: cover;
+    }
+
+    .calc-container {
+        height: 330px;
+        width: 600px;
+        margin-top: 60px;
+        background-color: #868C91;
+        border-radius: 30px;
+    }
+
+    .calc-header {
+        font-size: 34px;
+        margin-top: 10px;
+    }
+
+    .input {
+        margin-top: 10px;
+        font-size: 28px;
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    #nome {
+        height: 26px;
+        width: 220px;
+        border-radius: 7px;
+        text-indent: 7px;
+    }
+    
+    #altura {
+        height: 26px;
+        width: 80px;
+        border-radius: 7px;
+        text-indent: 7px;
+    }
+
+    #peso {
+        height: 26px;
+        width: 80px;
+        border-radius: 7px;
+        text-indent: 7px;
+    }
+
+    #botao {
+        margin-top: 20px;
+        width: 180px;
+        height: 35px;
+        border-radius: 7px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    #resultado {
+        font-size: 20px;
+    }
+
+    .infos-container {
+        margin-top: 50px;
+    }
+
+    .info-header {
+        font-size: 34px;
+    }
+
+    .intro {
+        width: 70%;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .imc-types {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+    
+    #copyright {
+        font-size: 1rem;
+    }
+    
+    i {
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width: 430px) {
+    .calc-container {
+        height: 300px;
+        width: 90%;
+        margin-top: 40px;
+        background-color: #868C91;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .calc-header {
+        font-size: 30px;
+    }
+    
+    .input {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    #nome {
+        height: 28px;
+    }
+    
+    #altura {
+        height: 28px;
+    }
+    
+    #peso {
+        height: 28px;
+    }
+    
+    #botao {
+        margin-top: 15px;
+        height: 35px;
+    }
+    
+    #resultado {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 700px) {
+    .calc-container {
+        width: 526px;
+    }
+
+    .intro {
+        width: 596px;
+    }
+}

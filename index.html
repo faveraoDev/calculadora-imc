@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="calc-container">
+        <h1 class="calc-header">CALCULADORA IMC</h1>
+        <div class="input">
+            <label>Nome:</label>
+            <input type="text" id="nome"/>
+        </div>
+        <div class="input">
+            <label>Altura (m):</label>
+            <input type="number" id="altura"/>
+        </div>
+        <div class="input">
+            <label>Peso (kg):</label>
+            <input type="number" id="peso"/>
+        </div>
+
+        <button id="botao">CALCULAR</button>
+
+        <div id="resultado"></div>
+    </div>
+    <div class="infos-container">
+        <h1 class="info-header">SOBRE O IMC</h1>
+        <span class="intro">
+                O índice de massa corporal, conhecido como IMC, é uma técnica utilizada para verificar o estado nutricional
+                e observar se a pessoa está dentro dos padrões de normalidade com relação ao seu peso e estatura. Esta técnica 
+                é medida por meio da fórmula: IMC = Peso (Kg)/ (Altura(m))². <br/>
+                Neste cálculo leva-se em conta o peso e a altura do indivíduo, dividindo o peso pela altura elevada ao quadrado. 
+                Este cálculo é uma forma simples e de grande importância para detectar se a pessoa apresenta um grau de desnutrição,
+                se está no padrão de normalidade, sobrepeso, obesidade ou obesidade mórbida.
+        </span>
+        <h2>RESULTADOS</h2>
+        <span class="imc-types">
+                - Abaixo de 18.5 = Desnutrição <br/>
+                - Entre 18.5 e 24.9 = Peso ideal <br/>
+                - Entre 25.0 e 29.9 = Sobrepeso <br/>
+                - Entre 30.0 e 39.9 = Obesidade <br/>
+                - Acima de 40.0 = Obesidade Mórbida
+        </span>
+    </div>
+
+    <footer>
+        <span id="copyright">Desenvolvido por João Victor Faverão</span>
+        <div id="social-media-container">
+            <a href="https://www.instagram.com/joaofav_/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/faveraoDev">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/joão-victor-faverão-mantese-123211289">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div> 
+    </footer>
+
+    <script src="https://kit.fontawesome.com/ce5b15a2cd.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
